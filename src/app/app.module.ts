@@ -1,22 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MailComponentComponent } from './Component/mail-component/mail-component.component';
 import { MailListComponent } from './Component/mail-list/mail-list.component';
-import { FormsModule } from '@angular/forms';
+import { FormComponent } from './Component/form/form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MailComponentComponent,
-    MailListComponent
+    MailListComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
