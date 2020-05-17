@@ -1,0 +1,16 @@
+<table>
+    <tr>
+        <th>Leído</th>
+        <th>Título</th>
+        <th>Emisor</th>
+    </tr>
+
+    <tr *ngFor="let correo of correos; index as i">
+        <td>
+            <input type="radio" name="leido-{{i}}" [(ngModel)]="correo.leido" [value]="true"> Si
+            <input type="radio" name="leido-{{i}}" [(ngModel)]="correo.leido" [value]="false"> No
+        </td>
+        <td>{{correo.titulo}}</td>
+        <td>{{correo.emisor}}</td>
+    </tr>
+</table>

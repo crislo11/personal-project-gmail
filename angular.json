@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "personal-project-gmail"
+    }
+  },
+  "defaultProject": "personal-project-gmail",
+  "cli": {
+    "analytics": "cde1357e-eab9-4459-9ac1-10dbe45dce9d"
+  }
 }
